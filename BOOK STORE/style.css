@@ -1,0 +1,441 @@
+/*import google fonts*/
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Roboto:wght@300;400&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-padding-top: 2rem;
+        list-style: none;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        font-family: "poppins",sans-serif;
+    }
+    :root{
+    
+        --main-color:aqua;
+        --second-color:blue;  
+    }
+    section{
+        padding: 50px 10%;
+    }
+     img {
+        width:100%;
+     }
+     *::selection{
+        color: white;
+        background: var(--main-color);
+     }
+     header.active{
+        background-color: var(--main-color);
+        box-shadow: 0 0 4px rgba(14, 15,55, 54/15%);
+     }
+     header.active.logo{
+        color: white;
+    }
+     header{
+        position:static;
+        width: 100%;
+        top: 100;
+        right:100;
+        z-index: 1000;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        padding: 10px 10%;
+        transition: 0.2s;
+     }
+ .logo{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.logo img{
+    width: 40px; 
+    margin: top 10px; 
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: black;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: white;
+    background: var(--main-color);
+    border-radius: 4px;
+}
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+     /* home page css start*/
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 1rem;
+}
+
+
+.home-text{
+    flex: 1 1 17rem;
+}
+
+
+.home-image{
+    flex: 1 1 17rem;
+}
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.home-text h1{
+    font-size: 4rem;
+    color: var(--second-color);
+}
+.home-text p{
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 40px ;
+    color: var(--main-color);
+    font-weight: 500;
+} 
+.btn:hover{
+    letter-spacing: 2px;
+    color: white;
+    background: var(--main-color);
+}
+ /*  home page css end*/
+
+/*shop start*/
+.heading{
+    text-align: center;
+}
+    .heading h2{
+    font-size: 2rem;
+    color:black
+    
+}
+.shop-container 
+{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin-top:2px;
+    background: white;
+    border: 6px solid wheat;
+    
+}
+.shop-box{
+    width: 20%;
+    background-color:wheat;
+    border-radius: 5px;
+    margin: 40px;
+    display: inline-block;
+    box-shadow: 2px 2px 10px black;
+}
+.shop-box h3{
+     font-size: 1rem;
+    font-weight: 500;
+    color:blue;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.shop-box h2{ font-size: 1.2 rem;
+color: blueviolet;
+letter-spacing: 1px;
+padding: 10px;
+}
+button{
+    background-color: aquamarine;
+    border: none;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+   display: inline-block;
+   font-size: medium;
+   margin: auto;
+   cursor: pointer;
+   padding: 15px 32px;
+}
+.shop-img img{
+    width: 100%;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+}
+/*shop css end*/
+/*about css start*/
+
+.about-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-box{
+    position: relative;
+    max-width: 100%;
+    background: white;
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+}
+.about-box.box-image{
+    max-width: 50px;
+    max-height: 50px;
+    flex: 0 0 150px;
+}
+.about-box.box-image img{
+    max-width: 100%;
+}
+.about-container.about-box.content{
+    margin-left: 20px;
+}
+.about{
+    width:100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: url(images/about\ background.jpeg);
+   background-color :cyan;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 1rem;
+}
+.about-text h1{
+    font-size: 2rem;
+    text-align: center
+    color: black;
+}
+
+
+.about-container{
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%
+    height: 200px;
+    margin  :10rem auto 0 auto;
+}
+
+.about img{
+    height: 250px;
+}
+
+.about-box h1{
+    margin: 0;
+    color:blueviolet;
+}
+.about-box p{
+    color: black;
+}
+
+/*about section css end */
+
+/*great authors section start*/
+
+.heading{
+    text-align: center;
+}
+    .heading h2{
+    font-size: 2rem;
+    color:black
+margin: 0.5rem;
+}
+.author-container {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin-top:2px;
+    background: white;
+    border: 6px solid wheat;
+}
+.author-box{
+    width: 20%;
+    background-color:wheat;
+    border-radius: 5px;
+    margin: 40px;
+    display: inline-block;
+    box-shadow: 2px 2px 10px black;
+}
+.author-box h3{
+    color:blue;
+    padding:10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.author-img img{
+    width: 100%;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+}
+
+/*author section end*/
+
+/*client review section start*/
+.customer-container{
+display: flex;
+align-items:center;
+justify-content: center;
+flex-wrap: wrap;
+gap: 1px;
+margin-top:2px;
+background: white;
+display: inline-block;
+
+}
+.customer-container.box {
+    flex: 1 1 16rem;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgb(14, 55, 54/15%);
+    padding: 20px;
+    border-radius: 0.5rem;
+    display: block;
+    
+    
+}
+.box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black
+}
+
+.box.bx {
+    color:green;
+    margin-top: 0.5rem;
+}
+
+.box p{
+    margin: 0.5rem 0 1 rem;
+}
+.box h2{
+    font-size: 1.2rem;
+    color: black;
+    letter-spacing: 1px;
+}
+
+/*customer review section css end*/
+
+/*css contact info  start*/
+
+
+/*footer section*/
+.contact-form{
+    flex: 1 1 20rem;
+    display: flex;
+    justify-content: center;
+}
+.contact-info h2 {
+    font-size: 1.7rem;
+    color: var(--second-color);
+    text-align: center;
+}
+
+.contact-info p{
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+}
+.address o {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+.adress i{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    display: inline;
+}
+.adress span{
+    font-size: 1rem;
+    margin-left: 1rem;
+
+}
+.social{
+    margin-top: 1rem;
+}
+.social a{
+    font-size: 24px;
+    color: var(--main-color);
+    margin-right: 1rem;
+    }
+.social a :hover{
+    color: var(--second-color);
+}
+/*footer section end*/
+
+/*contact form start */
+contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+form input ,textarea{
+                     width: 100%;
+                     padding: 17px;
+                     border-radius: 0.5rem;
+                     outline: none;
+                     margin-bottom: 1rem;
+                     border: 2px solid var(--main-color);
+                     box-shadow:0 4px 4px 2px rgb(14, 55, 54/15%);
+}
+
+
+form input ::placeholder,textarea ::placeholder{
+    color: var(--main-color);
+}
+form textarea{
+    resize: none;
+    height: 150px;
+}
+form.btn{
+    max: width 10px;
+    background: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+form.btn :hover{
+    background: var(--main-color);
+}
+/*contact form css end*/
